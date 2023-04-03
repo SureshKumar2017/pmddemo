@@ -1,0 +1,6 @@
+repos:
+- repo: https://github.com/dustinsand/pre-commit-jvm
+  rev: v0.8.0
+  hooks:
+    - id: pmd
+      args: [ -rulesets, controllerclassrule.xml, -language, java, -cache, .pmd/cache, -dir, src/main/java, -f, textcolor ]
