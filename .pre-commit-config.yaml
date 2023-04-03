@@ -3,4 +3,4 @@ repos:
   rev: v0.8.0
   hooks:
     - id: pmd
-      args: [ -rulesets, controllerclassrule.xml, -language, java, -cache, .pmd/cache, -dir, src/main/java, -f, textcolor ]
+      args: [ -rulesets, controllerclassrule.xml,customrules.xml, -language, java, -cache, .pmd/cache, -dir, src/main/java, -f, textcolor ]
